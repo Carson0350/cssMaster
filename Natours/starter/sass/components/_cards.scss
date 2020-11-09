@@ -135,7 +135,11 @@
   }
 
 
-  @include respond (tab-port) {
+  // @include respond (tab-port) {
+  @media only screen and (max-width: 56.25em),
+  // checks devices type and chnges cards if it is a touch device
+    only screen and (hover: none) {
+
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
