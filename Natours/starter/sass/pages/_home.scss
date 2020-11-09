@@ -77,7 +77,7 @@
   }
 
   @include respond (tab-port) {
-    background-image: (to right,
+    background-image: (1deg,
     rgba($color-white, .9) 0%,
     rgba($color-white, .9) 100%),
     url(../../img/nat-10.jpg);
