@@ -1,5 +1,14 @@
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: 1px solid var(--color-grey-light-2);
+
+  // makes all elements in this parent container flex
+  display: flex;
+  // this helps space items out along the main axis
+  justify-content: space-between;
+  // align items long the secondary axis
+  align-items: center;
+
+  font-size: 1.4rem;
 }

@@ -11,19 +11,182 @@
         <title>trillo &mdash; Your all-in-one booking app</title>
     </head>
     <body>
-        <h1>Hello world</h1>
         <div class="container">
             <header class="header">
-                HEADER
+                <img src="img/logo.png" alt="logo" class="logo">
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search horels">
+                    <!-- working with svg as icon -->
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">12</span>
+                    </div>
+
+                    <div class="user-nav__user">
+                        <img src="img/user-1.jpg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Silly Billy</span>
+                    </div>
+                </nav>
             </header>
+
+
             <!-- content is flex container. sidebar and hotel-view are flex items -->
             <div class="content">
                 <nav class="sidebar">
-                    NAVIGATION/ SIDEBAR
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Hotel</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                <span>Flight</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                </svg>
+                                <span>Car rental</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                </svg>
+                                <span>Tours</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="legal">
+                        &copy; 2020 by Carson A. little rights reserved
+                    </div>
                 </nav>
+
+
                 <main class="hotel-view">
-                    HOTEL VIEW
+                    <div class="gallery">
+                        <figure class="garllery__item">
+                            <img src="img/hotel-1.jpg" alt="photo of hotel 1" class="gallery__photo">
+                        </figure>
+
+                        <figure class="garllery__item">
+                            <img src="img/hotel-2.jpg" alt="photo of hotel 2" class="gallery__photo">
+                        </figure>
+
+                        <figure class="garllery__item">
+                            <img src="img/hotel-3.jpg" alt="photo of hotel 3" class="gallery__photo">
+                        </figure>
+                    </div>
+
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            hotel hotel
+                        </h1>
+
+                        <div class="overview__stars">
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+
+                        <div class="overview__location">
+                            <svg class="overview__icon-location">
+                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                            <button class="btn-inline">Kirksville, Missouri</button>
+                        </div>
+
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">99</div>
+                            <div class="overview__rating-count">9345</div>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ex ea commodo consequat.
+                            </p>
+
+                            <ul class="list">
+                                <li class="list__item">close to the beach</li>
+                                <li class="list__item">breakfest included</li>
+                                <li class="list__item">airport shuddel</li>
+                                <li class="list__item">Free Wifi</li>
+                                <li class="list__item">AC and heating</li>
+                                <li class="list__item">pets allowed</li>
+                                <li class="list__item">family friendly</li>
+                                <li class="list__item">Adult entertainment</li>
+                            </ul>
+
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="img/user-3.jpg" alt="Friend 3" class="recommend__photo">
+                                    <img src="img/user-4.jpg" alt="Friend 4" class="recommend__photo">
+                                    <img src="img/user-5.jpg" alt="Friend 5" class="recommend__photo">
+                                    <img src="img/user-6.jpg" alt="Friend 6" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-reviews">
+                            User Review
+                        </div>
+                    </div>
                 </main>
+
+
             </div>
         </div>
     </body>
