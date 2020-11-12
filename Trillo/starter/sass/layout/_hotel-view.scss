@@ -17,7 +17,7 @@
 
   display: flex;
   align-items: center;
-  border-bottom: --line;
+  border-bottom: 1px solid rgba(0,0,0,.1 );
 
   &__heading {
     font-size: 2.25rem;
@@ -88,8 +88,17 @@
   cursor: pointer;
   transition: all .2s;
 
+  & span {
+    margin-left: 3px;
+    transition: margin-left .2;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1)
+
+    span {
+      margin-left: 8px;
+    }
   }
 
   &:focus {
@@ -114,3 +123,4 @@
     box-shadow: none;
   }
 }
+
