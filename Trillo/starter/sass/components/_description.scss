@@ -19,6 +19,16 @@
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  @media only screen and (max-width: 68.75em) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    margin-right: 0rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .user-reviews {
